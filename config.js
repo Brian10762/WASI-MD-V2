@@ -58,16 +58,16 @@ global.SESSION_ID =
   process.env.SESSION_ID ||
   ""
 module.exports = {
-  menu: process.env.MENU || "",
+  menu: process.env.MENU || "2",
   HANDLERS: process.env.PREFIX || ".",
   BRANCH: process.env.BRANCH || "main",
   VERSION: process.env.VERSION || "1.0.0",
   caption: process.env.CAPTION || "𝐅𝐈𝐋𝐄-𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄𝐃-𝐁𝐘-𝐖𝐀𝐒𝐈-𝐌𝐃-𝐕2😍",
   author: process.env.PACK_AUTHER || "WASO",
   packname: process.env.PACK_NAME || "♥️",
-  botname: process.env.BOT_NAME || "𝐖𝐀𝐒𝐈-𝐌𝐃-𝐕2",
-  ownername: process.env.OWNER_NAME || "WASI",
-  errorChat: process.env.ERROR_CHAT || "923192173398",
+  botname: process.env.BOT_NAME || "BRIAN-𝐌𝐃-𝐕2",
+  ownername: process.env.OWNER_NAME || "BRIAN",
+  errorChat: process.env.ERROR_CHAT || "254706002272",
   KOYEB_API: process.env.KOYEB_API || "false",
   REMOVE_BG_KEY: process.env.REMOVE_BG_KEY || "",
   OPENAI_API_KEY: process.env.OPENAI_API_KEY || "",
@@ -77,11 +77,11 @@ module.exports = {
   HEROKU: process.env.HEROKU_APP_NAME && process.env.HEROKU_API_KEY,
   aitts_Voice_Id: process.env.AITTS_ID || "37",
   ELEVENLAB_API_KEY: process.env.ELEVENLAB_API_KEY || "",
-  WORKTYPE: process.env.WORKTYPE || process.env.MODE || "private",
+  WORKTYPE: process.env.WORKTYPE || process.env.MODE || "public",
   AUTOREACTION: process.env.AUTOREACTION || process.env.AUTOREACTION || "true",
   LANG: (process.env.THEME || "WASI").toUpperCase(),
 };
-global.rank = "updated";
+global.rank = "false";
 global.isMongodb = false;
 let file = require.resolve(__filename);
 fs.watchFile(file, () => {
